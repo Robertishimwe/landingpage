@@ -574,7 +574,7 @@ ol li ol li:hover {
 
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 375px) {
 
     body {
         
