@@ -66,7 +66,12 @@ body {
 .menulo {
     display: none;
 }
-
+.mobm {
+    display: none;
+}
+.close {
+    display: none;
+}
 
 
 
@@ -574,7 +579,7 @@ ol li ol li:hover {
 
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 375px) {
 
     body {
         
@@ -600,7 +605,7 @@ ol li ol li:hover {
         margin-left: 40px;
         width: 70px;
         height: 11100px;
-        display:none;
+        display: none;
        
      } 
     .secondheader {
@@ -643,9 +648,9 @@ ol li ol li:hover {
         font-size: 70px;
     }
     .btn {
-        position:absolute;
+        display: flex;
         margin-top: 1330px;
-        margin-left: 30px;
+        margin-left: 200px;
        /** border: 1px solid black;  **/
         width: 1340px;
         height: 120px;
@@ -1035,11 +1040,7 @@ ol li ol li {
     margin-left: 900px;
 
 }
-
-
-/** open menu **/
-/**
-.close {
+.close{
     position: absolute;
     flex-direction: row;
     display: block;
@@ -1053,6 +1054,11 @@ ol li ol li {
 
 }
 
+
+/** open menu **/
+/**
+
+
 .firstheader {
     display: block;
     color: black;
@@ -1065,5 +1071,23 @@ ol li ol li {
     
     
 }**/
+
+
+
+
+/** mobile click menu **/
+
+.mobm {
+    position:absolute;
+    display:none;
+    background-color:white;
+    width: 1200px;
+    height: 1700px;
+    margin-top: 300px;
+    margin-left: 100px;
+    border-radius: 30px;
+    transition: 3s;
+}
+
 
 }
