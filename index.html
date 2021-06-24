@@ -29,19 +29,52 @@
        <!--mobile view elemennts-->
       <img src="./images/logo.svg" alt="logo2" class="logo2">
       <img src="./images/bars-solid.svg" alt="bars" class="bars">
-      <img src="./images/icon-close.svg" alt="close" class="close">
-      <img src="./images/icon-hamburger.svg" alt="bars1" class="bars1"  id="bars1">
+      <img src="./images/icon-close.svg" alt="close" class="close" id="close" onclick="quit()">
+      <img src="./images/icon-hamburger.svg" alt="bars1" class="bars1"  id="homobar" onclick="hambur()">
 
-   <!--   <script> /**
-        var bars1= document.getElementById("menulo");
-        function mee() {
-          document.getElementById("bars1").innerHTML="<i>kfkfkfkfkf</i>";
-        } */
+   <d class="mobm" id="mobm">        </d>
 
-        </script>   -->
 
-    
-     <!-- <div class="menulo"> </div>  -->
+   <script>
+   
+   
+   function hambur() {
+    var homobar=document.getElementById ('homobar');
+    var mobm=document.getElementById ('mobm');
+   var close=document.getElementById('close');
+   var free=document.getElementById('free');
+   var more=document.getElementById('more');
+    mobm.style.display = 'flex';
+    close.style.display ='flex'; 
+    homobar.style.display='none';
+    free.style.display='none';
+    more.style.display='none'; 
+   }
+   
+   
+   
+   function quit() {
+    var homobar=document.getElementById ('homobar');
+    var mobm=document.getElementById ('mobm');
+   var close=document.getElementById('close');
+   var free=document.getElementById('free');
+   var more=document.getElementById('more');
+    mobm.style.display = 'none';
+    close.style.display ='none'; 
+    homobar.style.display='block';
+   free.style.display='inline';
+    more.style.display='inline';
+
+   
+     
+
+   }
+
+
+
+   </script>
+
+
       
         <!--left side header-->
         <div class="firstheader">
@@ -118,8 +151,8 @@
           
          
             <div class="account1">
-                <a href="#" class="free"><b>Start for Free</b></a>
-                <a href="#" class="learn"><b>Learn More</b></a>
+                <a href="#" class="free" id="free"><b>Start for Free</b></a>
+                <a href="#" class="learn" id="more"><b>Learn More</b></a>
                 </div>
                
         </div>
