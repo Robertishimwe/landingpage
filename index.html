@@ -32,8 +32,44 @@
       <img src="./images/icon-close.svg" alt="close" class="close" id="close" onclick="quit()">
       <img src="./images/icon-hamburger.svg" alt="bars1" class="bars1"  id="homobar" onclick="hambur()">
 
-   <d class="mobm" id="mobm">        </d>
+   <d class="mobm" id="mobm"> <div id="links">
+   <ol class="ol1">
+     <li class="li1"><b> Product <img src="./images/icon-arrow-light.svg" alt=""> </b> </br></br>
+              <ol class="ol2">
+        <li><a><b>Overview</b></a></li>
+        <li><a><b>Pricing</b></a></li>
+        <li><a><b>Marketplace</b></a></li>
+        <li><a><b>Features</b></a></li>
+        <li><a><b>Integrations</b></a></li>
+      </ol>
+     </li>
 
+
+    <li class="li1"> <b>Campany</b></br></br>
+      <ol class="ol2">
+        <li><a><b>About &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</b></a></li>
+        <li><a><b>Team</b></a></li>
+        <li><a><b>Blog</b></a></li>
+     </ol>
+    </li>
+
+    <li class="li1"><b>Connect</b>
+      <ol class=ol2>
+        <li><a><b>Contact</b></a></li>
+        <li><a><b>Newsletter &nbsp </b></a></li>
+        <li><a><b>LinkedIn</b></a></li>
+     </ol>
+    </li>
+
+
+   </ol>
+  </div> 
+  <div class="vl"></div>
+  
+    <a href="#" class="login2"><b>Login</b></a> </br>
+    <a href="#" class="register2"><b>&nbsp Register</b></a>
+    
+</d>
 
    <script>
    
@@ -44,11 +80,14 @@
    var close=document.getElementById('close');
    var free=document.getElementById('free');
    var more=document.getElementById('more');
+   var titlebar1=document.getElementById('titlebar1');
     mobm.style.display = 'flex';
     close.style.display ='flex'; 
     homobar.style.display='none';
     free.style.display='none';
-    more.style.display='none'; 
+    more.style.display='none';
+    titlebar1.style.display='none';
+
    }
    
    
@@ -59,11 +98,13 @@
    var close=document.getElementById('close');
    var free=document.getElementById('free');
    var more=document.getElementById('more');
+   var titlebar1=document.getElementById('titlebar1');
     mobm.style.display = 'none';
     close.style.display ='none'; 
     homobar.style.display='block';
    free.style.display='inline';
     more.style.display='inline';
+    titlebar1.style.display='block';
 
    
      
@@ -82,7 +123,7 @@
                 <img src="./images/logo.svg" alt="logo">
             </div>
            
-          <div class="menu">
+          <div class="menu" id="menu2">
 
             <h1 class="modern">A modern</h1>
             <h1 class="modern">publishing platform</h1>
@@ -141,8 +182,8 @@
 
         </div>
         <!--title bar-->
-        <div class="titlebar">
-            <p><h1> <span class="you"> A modern</span> publishing platform</h1></p>
+        <div class="titlebar" id="titlebar1">
+            <p class="Grow" id="grow"><h1> <span class="you"> A modern</span> publishing platform</h1></p>
             <p class="Grow"><span class="you1">Grow your audience and build your </span>online brand</p>
 
         </div>
